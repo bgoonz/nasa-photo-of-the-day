@@ -1,0 +1,421 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\bryan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.18\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <div><h1 class="mume-header" id="module-project-component-side-effects-nasa-apod">Module Project: Component Side Effects- NASA APOD</h1>
+
+<p>This will be a two-module project. In it you will consume the NASA API to fetch the &quot;Astronomy Photo Of The Day&quot; or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the <a href="DAY_TWO_README.md">DAY_TWO_README.md</a> file) you will re-style your app using <a href="https://github.com/LambdaSchool/nasa-photo-of-the-day.git">Styled Components</a>.</p>
+<h2 class="mume-header" id="instructions">Instructions</h2>
+
+<hr>
+<p>Read these instructions carefully. Understand exactly what is expected before starting this project.</p>
+<h2 class="mume-header" id="commits">Commits</h2>
+
+<p>Commit your code regularly and meaningfully. This helps both you and your team lead in case you ever need to return to old code for any number of reasons.</p>
+<h2 class="mume-header" id="introduction">Introduction</h2>
+
+<p>In this project you will build out a application to show the NASA photo of the day.</p>
+<ul>
+<li>This is a really fun project, and one to show your family and friends when you&apos;ve finished.</li>
+<li>You will be starting from scratch and building the entire app</li>
+<li>You don&apos;t have any design specs to follow for this project, so you may want to start by building a basic wireframe first. Make it simple at the beginning, since you don&apos;t know what data you&apos;ll be getting back from NASA</li>
+<li>Once you get the data back, there may be more than you expected, or less than you expected, so your design plans may change. That&apos;s totally fine, and very normal in the real world. Just make the proper adjustments and move forward!</li>
+</ul>
+<h2 class="mume-header" id="instructions-1">Instructions</h2>
+
+<h3 class="mume-header" id="task-1-project-set-up">Task 1: Project Set Up</h3>
+
+<p>This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Create a forked copy of this project.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Clone your OWN version of the repository in your terminal</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Download project dependencies by running <code>npm install</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Start up the app using <code>npm start</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Create a new branch: <code>git checkout -b &lt;firstName-lastName&gt;</code>.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Implement the project on your newly created <code>&lt;firstName-lastName&gt;</code> branch, committing changes regularly.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Push commits: <code>git push origin &lt;firstName-lastName&gt;</code>.</li>
+</ul>
+<h3 class="mume-header" id="task-2-mvp">Task 2: MVP</h3>
+
+<p><strong>Planning</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> If you want, this is the time to make a simple design spec (look up <a href="https://www.google.com/search?q=simple+wireframes">&quot;simple wireframes&quot;</a> to find resources &amp; examples). <strong>A pen &amp; paper sketch (or outline) is often the fastest way to start your planning.</strong></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Once you have a design plan in mind, break down the designs into individual components.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Now it&apos;s time to jump into the code!</li>
+</ul>
+<p><strong>File structure</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Take a look at your planned components. Create the folders and files you need for each component.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Leave most of them blank for now - you need to get your data from the API before you can really get these built.</li>
+</ul>
+<p><strong>Fetching the Data</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> In <code>App.js</code> (or where ever you wanted to fetch the data) add state for the data you&apos;ll be getting from NASA.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Add an effect hook to handle the API call side effect.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Go to the <a href="https://api.nasa.gov/#apod">NASA APOD API docs</a> and read through the docs to see how to make the API call.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> You don&apos;t <em>need</em> an API key. However you may need one if you exceed the API request limits.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Using the endpoint given, fetch the data using <code>axios</code>.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> In your <code>.then()</code> make sure to <code>console.log</code> the response so you can look at the shape of the data. &#x1F603;</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don&apos;t want this effect synced up to any state/props), otherwise you will start an <strong>infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY.</strong></li>
+</ul>
+<p>DEMO KEY rate limits:</p>
+<blockquote>
+<p>Hourly Limit: 30 requests per IP address per hour</p>
+</blockquote>
+<blockquote>
+<p>Daily Limit: 50 requests per IP address per day</p>
+</blockquote>
+<p><em>Note: if the photo url is NOT a photo, you will need to learn how to display a video in a React app on your own, OR just fetch the APOD from a different date by adding this to the back of the API endpoint: <code>&amp;date=2012-03-14</code></em></p>
+<p><strong>Adding the Data to State</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Once you have made the call correctly, and logged the data, add the data to the state property you built.</li>
+</ul>
+<p><strong>Display the Data</strong><br>
+Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.</p>
+<h4 class="mume-header" id="_mvp-requirements_"><em>MVP Requirements:</em></h4>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Use the effect hook to fetch the APOD data when the component mounts.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Display the APOD data in different components that are composed together to build your UI.</li>
+</ul>
+<h4 class="mume-header" id="pro-tips">Pro Tips</h4>
+
+<ul>
+<li>You may run into an error where your components try to access object properties before your data is finished being fetched - ie. <code>Cannot read property &apos;url&apos; of undefined</code>. This means that the data you passed as props is undefined, when you were expecting it to be an object. You can fix this by simply adding something like this to any component that needs to read data from your state object:</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token comment">// Display a loading message while the data is fetching</span>
+<span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>props<span class="token punctuation">.</span><span class="token property-access">photoOfTheDay</span><span class="token punctuation">)</span> <span class="token keyword control-flow">return</span> <span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span><span class="token maybe-class-name">Loading</span><span class="token spread operator">...</span><span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Display your component as normal after the data has been fetched</span>
+<span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+  <span class="token punctuation">{</span><span class="token comment">/* your normal JSX here */</span><span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li>Read through the API docs carefully. You will read through many technical docs as a developer, so start now to try and understand them.</li>
+</ul>
+<h3 class="mume-header" id="task-3-stretch">Task 3: Stretch</h3>
+
+<p>Do not attempt stretch problems until MVP has been reached and a final commit has been made.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Notice the optional query param <code>date</code>? You can pass a different date in your url like this <code>https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&amp;date=2012-03-14</code> to get the APOD from a different date. Add a date dropdown that allows you to select a different date and see that APOD. This will be quite a bit of work, but it will be a fantastic exercise to go through a little more complicated logic and interaction in your app. This is also a very common type of interaction, so it would be good to try this out</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Make another app that consumes another one of NASA&apos;s other APIs listed on the same website</li>
+</ul>
+<h2 class="mume-header" id="submission-format">Submission Format</h2>
+
+<p>Follow these steps for completing your project.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Submit a Pull-Request to merge Branch into <code>main</code> (student&apos;s Repository).</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="part-ii-advanced-styling-techniquesday_two_readmemd">Part II - <a href="DAY_TWO_README.md">Advanced Styling Techniques</a></h2>
+
+</div>
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#module-project-component-side-effects-nasa-apod">Module Project: Component Side Effects- NASA APOD</a>
+<ul>
+<li><a href="#instructions">Instructions</a></li>
+<li><a href="#commits">Commits</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#instructions-1">Instructions</a>
+<ul>
+<li><a href="#task-1-project-set-up">Task 1: Project Set Up</a></li>
+<li><a href="#task-2-mvp">Task 2: MVP</a>
+<ul>
+<li><a href="#_mvp-requirements_"><em>MVP Requirements:</em></a></li>
+<li><a href="#pro-tips">Pro Tips</a></li>
+</ul>
+</li>
+<li><a href="#task-3-stretch">Task 3: Stretch</a></li>
+</ul>
+</li>
+<li><a href="#submission-format">Submission Format</a></li>
+<li><a href="#part-ii-advanced-styling-techniquesday_two_readmemd">Part II - Advanced Styling Techniques</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
